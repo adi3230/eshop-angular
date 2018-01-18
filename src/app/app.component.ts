@@ -11,11 +11,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
  constructor(private userService: UserService, private authService: AuthService, router: Router) {
    authService.user$.subscribe(user => {
-     if (user) {
-       userService.save(user);
-       let returnUrl = localStorage.getItem('returnUrl');
-       router.navigateByUrl(returnUrl);
-     }
+     // tslint:disable-next-line:curly
+     if (!user) return;
+
+     userService.save(user);
+
+     let returnUrl = localStorage.getItem('returnUrl');
+
+     // tslint:disable-next-line:curly
+     if (!returnUrl) return;
+     localStorage.removeItem('returnUrl');
+     router.navigateByUrl(returnUrl);
    });
  }
 }
