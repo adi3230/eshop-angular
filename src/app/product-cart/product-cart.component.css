@@ -3,7 +3,9 @@
 }
 
 .products__price {
-  padding-left: 0.8em;
+  /* margin-left: 0.8em;
+  margin-bottom: 1em;*/
+  margin: 0.8em 1em;
 }
 
 .products__display-box {
@@ -11,5 +13,5 @@
 }
 
 .products__add-to-cart {
-  margin: 1em;
+  padding: 0;
 }
