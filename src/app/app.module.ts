@@ -58,7 +58,7 @@ import { ProductService } from './services/product/product.service';
       // Anonymous User
       {
         path: '',
-        component: HomeComponent
+        component: ProductsComponent
       }, {
         path: 'products',
         component: ProductsComponent
