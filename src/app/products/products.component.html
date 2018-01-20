@@ -1,15 +1,22 @@
 <div class="products">
   <div class="row">
     <div class="col-3">
-      <ul class="list-group">
-        <li *ngFor="let c of categories$ | async" class="list-group-item">
+      <div class="list-group">
+        <a class="list-group-item list-group-item-action"
+           routerLink="/"
+           [class.active]="!category" >All Categories</a>
+        <a *ngFor="let c of categories$ | async"
+           routerLink="/"
+           [queryParams]="{ category: c.$key }"
+           [class.active]="category === c.$key"
+           class="list-group-item list-group-item-action">
           {{ c.name }}
-        </li>
-      </ul>
+      </a>
+    </div>
     </div>
     <div class="col">
       <div class="row">
-        <ng-container *ngFor="let p of products$ | async; let i = index">
+        <ng-container *ngFor="let p of filteredProducts; let i = index">
           <div class="col">
             <div class="card products__display-box" style="width: 15rem;">
               <img class="card-img-top" [src]="p.imageUrl">
