@@ -1,0 +1,15 @@
+.products__title {
+  padding: 0.5em 0 0 0.5em;
+}
+
+.products__price {
+  padding-left: 0.8em;
+}
+
+.products__display-box {
+  margin-top: 30px;
+}
+
+.products__add-to-cart {
+  margin: 1em;
+}
