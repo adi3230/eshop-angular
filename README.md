@@ -1,5 +1,7 @@
 # EshopAngular
 
+[![Build Status](https://travis-ci.org/adi3230/eshop-angular.png)](https://travis-ci.org/adi3230/eshop-angular)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
 ## Development server
