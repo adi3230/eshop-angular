@@ -7,7 +7,7 @@
       <div class="row">
         <ng-container *ngFor="let p of filteredProducts; let i = index">
           <div class="col">
-            <product-cart [product] = "p">
+            <product-cart [product] = "p" [shopping-cart]="cart">
             </product-cart>
             <div *ngIf="(i+1)%2 === 0" class="w-100"></div>
           </div>
