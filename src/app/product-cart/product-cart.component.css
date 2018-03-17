@@ -15,3 +15,7 @@
 .products__add-to-cart {
   padding: 0;
 }
+
+.products__add-to-cart-cta {
+  cursor: pointer;
+}
