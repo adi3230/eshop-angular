@@ -1,3 +1,4 @@
+import { OrderService } from './services/order/order.service';
 import { ShoppingCartService } from './services/shopping-cart/shopping-cart.service';
 import { CanActivate } from '@angular/router/src/interfaces';
 import { UserService } from './services/user/user.service';
@@ -120,7 +121,8 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
     AdminAuthGuardService,
     CategoryService,
     ProductService,
-    ShoppingCartService
+    ShoppingCartService,
+    OrderService
   ],
   bootstrap: [AppComponent]
 })
