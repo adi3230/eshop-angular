@@ -84,7 +84,7 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
         component: CheckOutComponent,
         canActivate: [AuthGuardService]
       }, {
-        path: 'order-success',
+        path: 'order-success/:id',
         component: OrderSuccessComponent,
         canActivate: [AuthGuardService]
       }, {
