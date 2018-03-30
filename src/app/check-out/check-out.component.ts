@@ -18,7 +18,12 @@ export class CheckOutComponent implements OnInit, OnDestroy {
   cartSubscription: Subscription;
   userSubscription: Subscription;
   userId: string;
-  shipping = {};
+  shipping = {
+    name: "",
+    addressLine1: "",
+    addressLine2: "",
+    city: ""
+  };
 
   constructor(
     private router: Router,
