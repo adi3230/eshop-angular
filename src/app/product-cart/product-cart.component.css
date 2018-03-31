@@ -14,8 +14,14 @@
 
 .products__add-to-cart {
   padding: 0;
+  background: #fff;
 }
 
 .products__add-to-cart-cta {
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.products__image {
+  height: 200px;
 }

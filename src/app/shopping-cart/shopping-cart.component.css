@@ -12,3 +12,7 @@
   border-radius: 100%;
   background-size: cover;
 }
+
+.shopping-cart__body {
+  margin-bottom: 80px;
+}
