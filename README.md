@@ -14,7 +14,7 @@ The above project was developed after learning the concepts from Udemy course by
 http://programmingwithmosh.com/courses/complete-angular-master-class/
 
 
-##Live Demo 
+## Live Demo
 https://eshop-angular.firebaseapp.com/
 
 ## Development server
